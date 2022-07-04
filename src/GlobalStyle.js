@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 3rem;
     color: var(--purple-primary);
   }
-  /* .small-heading{
+  .small-heading{
     font-size: 2.5rem;
     color: var(--purple-primary);
     text-align: center;
@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   // Utilities
   .c-para{
     text-align: center
-  } */
+  }
 
 `;
 
