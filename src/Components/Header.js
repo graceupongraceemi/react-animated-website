@@ -16,14 +16,14 @@ function Header() {
 }
 
 const HeaderStyled = styled.header`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
   .header-content {
-    padding: 0 10rem;
+    padding: 0 12rem;
   }
 `;
 

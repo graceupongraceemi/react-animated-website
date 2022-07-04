@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
     --lavender-secondary: #6A6D9E; /*Primary Font Color*/
     --dark-primary: #16194F;
     --border-colour: #CAD6F1;
+
   }
 
   *{
@@ -21,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    background-color: var(---neutral-light);
+    background-color: var(--neutral-light);
     color: white;
     font-size: 1.2rem;
   }
@@ -29,6 +30,28 @@ const GlobalStyle = createGlobalStyle`
   a{
     color: inherit;
   }
+
+  p{
+    color: var(--lavender-secondary);
+    line-height: 1.9rem;
+  }
+  .secondary-heading{
+    font-size: 3rem;
+    color: var(--purple-primary);
+  }
+  /* .small-heading{
+    font-size: 2.5rem;
+    color: var(--purple-primary);
+    text-align: center;
+  }
+  span{
+    color: var(--accent-pink);
+  }
+
+  // Utilities
+  .c-para{
+    text-align: center
+  } */
 
 `;
 
