@@ -61,6 +61,15 @@ function Footer() {
 const FooterStyled = styled.footer`
   padding: 0 18rem;
   background-color: #dce2f0;
+  @media screen and (max-width: 1347px) {
+    padding: 5rem 14rem;
+  }
+  @media screen and (max-width: 1186px) {
+    padding: 5rem 8rem;
+  }
+  @media screen and (max-width: 990px) {
+    padding: 5rem 4rem;
+  }
 
   .footer-con {
     display: grid;

@@ -13,9 +13,8 @@ function CardSection() {
               One card for all your payments
             </h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-              quo similique laboriosam explicabo maxime eos. Tempore dignissimos
-              impedit pariatur maxime? Repudiandae in ea saepe natus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              doloribus repellat, reiciendis rerum laudantium quibusdam.
             </p>
           </div>
           <div className='card-right'>
@@ -31,10 +30,16 @@ const CardSectionStyled = styled.section`
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 845px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .card-right {
       display: flex;
       justify-content: flex-end;
+      img {
+        filter: drop-shadow(0px 50px 100px rgba(22, 25, 79, 0.15));
+      }
     }
     .card-left {
       p {

@@ -4,6 +4,7 @@ import { InnerLayout } from '../styles/Layouts';
 import ChartStats from './ChartStats';
 import chart from '../img/chart.svg';
 import AnimatedButton from './AnimatedButton';
+import { Bounce, Roll } from 'react-reveal';
 
 function ChartSection() {
   return (
@@ -23,13 +24,17 @@ function ChartSection() {
             <h2 className='secondary-heading'>
               Manage your finances like a pro
             </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              exercitationem voluptatum laboriosam? Est, earum eligendi, itaque
-              quis dolores laboriosam dolore adipisci tenetur obcaecati quas
-              deserunt.
-            </p>
-            <AnimatedButton name={'Learn More'} />
+            <Roll right>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus exercitationem voluptatum laboriosam? Est, earum
+                eligendi, itaque quis dolores laboriosam dolore adipisci tenetur
+                obcaecati quas deserunt.
+              </p>
+            </Roll>
+            <Bounce right>
+              <AnimatedButton name={'Learn More'} />
+            </Bounce>
           </div>
         </div>
       </InnerLayout>
@@ -41,8 +46,14 @@ const ChartStyled = styled.section`
   .chart-con {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @media screen and (max-width: 1347px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .chart-left {
       width: 80%;
+      @media screen and (max-width: 1347px) {
+        width: 100%;
+      }
       .stats {
         img {
           box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
